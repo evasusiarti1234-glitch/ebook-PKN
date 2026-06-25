@@ -1,0 +1,2091 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bab 2 - Penerapan Nilai-Nilai Pancasila | Pkn Kelas 7</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: #f4f7fa;
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav .nav-container {
+            max-width: 1200px;
+            margin: 0 auto;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+            gap: 1rem;
+        }
+
+        nav .brand {
+            color: #ffd54f;
+            font-weight: 700;
+            font-size: 1.1rem;
+            text-decoration: none;
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            gap: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd54f;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%);
+            color: white;
+            padding: 4rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        .hero .chapter-badge {
+            display: inline-block;
+            background: #ffd54f;
+            color: #1a237e;
+            padding: 0.4rem 1.5rem;
+            border-radius: 20px;
+            font-weight: 700;
+            margin-bottom: 1rem;
+            position: relative;
+        }
+
+        .hero h1 {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.2rem;
+            opacity: 0.9;
+            position: relative;
+            max-width: 700px;
+            margin: 0 auto;
+        }
+
+        /* Learning Objectives */
+        .objectives {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            padding: 2rem;
+            margin: 2rem auto;
+            max-width: 1100px;
+            border-radius: 15px;
+            border-left: 5px solid #ff6f00;
+            box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+        }
+
+        .objectives h2 {
+            color: #e65100;
+            margin-bottom: 1rem;
+            font-size: 1.5rem;
+        }
+
+        .objectives ul {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .objectives ul li {
+            padding: 0.5rem 0;
+            padding-left: 2rem;
+            position: relative;
+            color: #444;
+        }
+
+        .objectives ul li::before {
+            content: '🎯';
+            position: absolute;
+            left: 0;
+        }
+
+        /* Main Content */
+        .content {
+            max-width: 1100px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .section {
+            background: #fff;
+            padding: 2.5rem;
+            margin-bottom: 2rem;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .section h2 {
+            color: #1a237e;
+            font-size: 1.8rem;
+            margin-bottom: 1.5rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #ffd54f;
+        }
+
+        .section h3 {
+            color: #0d47a1;
+            font-size: 1.3rem;
+            margin-top: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section h4 {
+            color: #1a237e;
+            font-size: 1.1rem;
+            margin-top: 1.2rem;
+            margin-bottom: 0.8rem;
+        }
+
+        .section p {
+            margin-bottom: 1rem;
+            text-align: justify;
+            color: #444;
+        }
+
+        .section ul, .section ol {
+            margin-left: 1.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .section ul li, .section ol li {
+            margin-bottom: 0.5rem;
+            color: #444;
+        }
+
+        /* Info Box */
+        .info-box {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 5px solid #1976d2;
+        }
+
+        .info-box.wawasan {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            border-left-color: #7b1fa2;
+        }
+
+        .info-box.renungkan {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-left-color: #ff6f00;
+        }
+
+        .info-box.profil {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border-left-color: #2e7d32;
+        }
+
+        .info-box.digital {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            border-left-color: #c2185b;
+        }
+
+        .info-box h4 {
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        /* Sila Card */
+        .sila-card {
+            background: linear-gradient(135deg, #fff, #f5f5f5);
+            padding: 2rem;
+            border-radius: 15px;
+            margin: 1.5rem 0;
+            border-top: 5px solid #1a237e;
+            box-shadow: 0 3px 15px rgba(0,0,0,0.08);
+        }
+
+        .sila-card.sila-1 { border-top-color: #ffd54f; }
+        .sila-card.sila-2 { border-top-color: #e53935; }
+        .sila-card.sila-3 { border-top-color: #1976d2; }
+        .sila-card.sila-4 { border-top-color: #2e7d32; }
+        .sila-card.sila-5 { border-top-color: #ff6f00; }
+
+        .sila-header {
+            display: flex;
+            align-items: center;
+            gap: 1.5rem;
+            margin-bottom: 1.5rem;
+            flex-wrap: wrap;
+        }
+
+        .sila-number {
+            width: 80px;
+            height: 80px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffd54f;
+            font-size: 2.5rem;
+            font-weight: 700;
+            flex-shrink: 0;
+        }
+
+        .sila-card.sila-1 .sila-number { background: linear-gradient(135deg, #ffd54f, #ff8f00); color: #1a237e; }
+        .sila-card.sila-2 .sila-number { background: linear-gradient(135deg, #e53935, #c62828); color: #fff; }
+        .sila-card.sila-3 .sila-number { background: linear-gradient(135deg, #1976d2, #0d47a1); color: #fff; }
+        .sila-card.sila-4 .sila-number { background: linear-gradient(135deg, #2e7d32, #1b5e20); color: #fff; }
+        .sila-card.sila-5 .sila-number { background: linear-gradient(135deg, #ff6f00, #e65100); color: #fff; }
+
+        .sila-info h3 {
+            color: #1a237e;
+            font-size: 1.4rem;
+            margin-top: 0;
+            margin-bottom: 0.3rem;
+        }
+
+        .sila-info .sila-text {
+            font-style: italic;
+            color: #555;
+            font-size: 1.05rem;
+            font-weight: 600;
+        }
+
+        .sila-info .sila-symbol {
+            color: #666;
+            font-size: 0.95rem;
+            margin-top: 0.3rem;
+        }
+
+        .implementation-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1rem;
+            margin-top: 1.5rem;
+        }
+
+        .impl-item {
+            background: #fff;
+            padding: 1.2rem;
+            border-radius: 10px;
+            border-left: 3px solid #1a237e;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.05);
+        }
+
+        .impl-item h5 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+            font-size: 1rem;
+        }
+
+        .impl-item p {
+            font-size: 0.95rem;
+            color: #555;
+            margin: 0;
+        }
+
+        /* Table */
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 1.5rem 0;
+            background: #fff;
+            border-radius: 10px;
+            overflow: hidden;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        table thead {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: #fff;
+        }
+
+        table th, table td {
+            padding: 1rem;
+            text-align: left;
+            border-bottom: 1px solid #e0e0e0;
+        }
+
+        table tbody tr:hover {
+            background: #f5f5f5;
+        }
+
+        /* Activity Box */
+        .activity {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 5px solid #2e7d32;
+        }
+
+        .activity h3 {
+            color: #1b5e20;
+            margin-top: 0;
+        }
+
+        .activity ol, .activity ul {
+            margin-left: 1.5rem;
+        }
+
+        /* Case Study */
+        .case-study {
+            background: linear-gradient(135deg, #fff8e1, #ffecb3);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin: 1.5rem 0;
+            border-left: 5px solid #ffa000;
+        }
+
+        .case-study h4 {
+            color: #e65100;
+            margin-top: 0;
+            margin-bottom: 0.8rem;
+        }
+
+        .case-study p {
+            margin-bottom: 0.5rem;
+        }
+
+        /* Quiz Section */
+        .quiz {
+            background: #fff;
+            padding: 2.5rem;
+            margin: 2rem auto;
+            max-width: 1100px;
+            border-radius: 15px;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .quiz h2 {
+            color: #1a237e;
+            font-size: 1.8rem;
+            margin-bottom: 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 3px solid #ffd54f;
+        }
+
+        .quiz-intro {
+            background: linear-gradient(135deg, #e3f2fd, #bbdefb);
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 2rem;
+            border-left: 5px solid #1976d2;
+        }
+
+        .quiz-intro h3 {
+            color: #0d47a1;
+            margin-bottom: 0.5rem;
+        }
+
+        .quiz-type {
+            background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+            padding: 0.7rem 1.2rem;
+            border-radius: 25px;
+            display: inline-block;
+            font-weight: 700;
+            color: #1a237e;
+            margin: 1.5rem 0 1rem;
+            font-size: 1rem;
+            border-left: 4px solid #1a237e;
+        }
+
+        .quiz-type.tf {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            color: #e65100;
+            border-left-color: #ff6f00;
+        }
+
+        .quiz-type.match {
+            background: linear-gradient(135deg, #f3e5f5, #e1bee7);
+            color: #6a1b9a;
+            border-left-color: #7b1fa2;
+        }
+
+        .quiz-type.fill {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            color: #1b5e20;
+            border-left-color: #2e7d32;
+        }
+
+        .quiz-type.essay {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            color: #880e4f;
+            border-left-color: #c2185b;
+        }
+
+        .question {
+            background: #f9f9f9;
+            padding: 1.5rem;
+            border-radius: 10px;
+            margin-bottom: 1.5rem;
+            border-left: 4px solid #1a237e;
+            transition: all 0.3s;
+        }
+
+        .question:hover {
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+        }
+
+        .question p.q-text {
+            font-weight: 600;
+            margin-bottom: 1rem;
+            color: #222;
+        }
+
+        .question .q-num {
+            display: inline-block;
+            background: #1a237e;
+            color: #fff;
+            width: 28px;
+            height: 28px;
+            border-radius: 50%;
+            text-align: center;
+            line-height: 28px;
+            font-size: 0.9rem;
+            margin-right: 0.5rem;
+        }
+
+        .options {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        .options li {
+            padding: 0.7rem 1rem;
+            margin-bottom: 0.5rem;
+            background: #fff;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            cursor: pointer;
+            transition: all 0.2s;
+            display: flex;
+            align-items: center;
+        }
+
+        .options li:hover {
+            background: #e8eaf6;
+            border-color: #1a237e;
+        }
+
+        .options li.selected {
+            background: #c5cae9;
+            border-color: #1a237e;
+            font-weight: 600;
+        }
+
+        .options li.correct {
+            background: #c8e6c9 !important;
+            border-color: #2e7d32 !important;
+            font-weight: 600;
+        }
+
+        .options li.incorrect {
+            background: #ffcdd2 !important;
+            border-color: #c62828 !important;
+        }
+
+        /* True/False specific */
+        .tf-options {
+            display: flex;
+            gap: 1rem;
+            margin-top: 0.5rem;
+        }
+
+        .tf-options li {
+            flex: 1;
+            justify-content: center;
+            padding: 0.8rem;
+        }
+
+        /* Matching specific */
+        .match-container {
+            display: grid;
+            grid-template-columns: 1fr auto 1fr;
+            gap: 0.5rem;
+            align-items: center;
+            margin-top: 1rem;
+        }
+
+        .match-item {
+            background: #fff;
+            padding: 0.8rem 1rem;
+            border-radius: 8px;
+            border: 2px solid #e0e0e0;
+            font-size: 0.95rem;
+        }
+
+        .match-arrow {
+            color: #1a237e;
+            font-size: 1.5rem;
+            text-align: center;
+        }
+
+        .match-select {
+            padding: 0.7rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 0.95rem;
+            background: #fff;
+            cursor: pointer;
+        }
+
+        .match-select:focus {
+            outline: none;
+            border-color: #1a237e;
+        }
+
+        /* Fill in blank */
+        .fill-input {
+            padding: 0.6rem 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-size: 1rem;
+            width: 100%;
+            max-width: 400px;
+            margin-top: 0.5rem;
+            font-family: inherit;
+        }
+
+        .fill-input:focus {
+            outline: none;
+            border-color: #1a237e;
+        }
+
+        /* Essay textarea */
+        .essay-textarea {
+            width: 100%;
+            min-height: 100px;
+            padding: 1rem;
+            border: 2px solid #e0e0e0;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            margin-top: 0.5rem;
+            resize: vertical;
+        }
+
+        .essay-textarea:focus {
+            outline: none;
+            border-color: #1a237e;
+        }
+
+        .answer-key {
+            background: #fff3e0;
+            padding: 1rem 1.5rem;
+            border-radius: 8px;
+            margin-top: 1rem;
+            border-left: 4px solid #ff6f00;
+            display: none;
+        }
+
+        .answer-key.show {
+            display: block;
+            animation: fadeIn 0.3s;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; transform: translateY(-5px); }
+            to { opacity: 1; transform: translateY(0); }
+        }
+
+        .btn {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: #fff;
+            padding: 0.9rem 2rem;
+            border: none;
+            border-radius: 8px;
+            cursor: pointer;
+            font-size: 1rem;
+            font-weight: 600;
+            margin-top: 1rem;
+            margin-right: 0.5rem;
+            transition: transform 0.2s, box-shadow 0.2s;
+        }
+
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 15px rgba(26,35,126,0.3);
+        }
+
+        .btn-secondary {
+            background: linear-gradient(135deg, #ff6f00, #e65100);
+        }
+
+        .btn-reset {
+            background: linear-gradient(135deg, #616161, #424242);
+        }
+
+        .score-display {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: #fff;
+            padding: 1.5rem;
+            border-radius: 12px;
+            text-align: center;
+            margin-top: 1.5rem;
+            display: none;
+        }
+
+        .score-display.show {
+            display: block;
+            animation: fadeIn 0.5s;
+        }
+
+        .score-display h3 {
+            color: #ffd54f;
+            margin-bottom: 0.5rem;
+        }
+
+        .score-display .score-num {
+            font-size: 2.5rem;
+            font-weight: 700;
+            margin: 0.5rem 0;
+        }
+
+        /* Summary */
+        .summary {
+            background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+        }
+
+        .summary h3 {
+            color: #1a237e;
+            margin-top: 0;
+        }
+
+        .summary ul {
+            margin-left: 1.5rem;
+        }
+
+        .summary ul li {
+            margin-bottom: 0.7rem;
+        }
+
+        /* Glossary */
+        .glossary {
+            background: #fff;
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+
+        .glossary-item {
+            padding: 1rem 0;
+            border-bottom: 1px dashed #e0e0e0;
+        }
+
+        .glossary-item:last-child {
+            border-bottom: none;
+        }
+
+        .glossary-item strong {
+            color: #1a237e;
+            font-size: 1.05rem;
+        }
+
+        /* Reflection */
+        .reflection {
+            background: linear-gradient(135deg, #fce4ec, #f8bbd0);
+            padding: 2rem;
+            border-radius: 12px;
+            margin: 2rem 0;
+            border-left: 5px solid #c2185b;
+        }
+
+        .reflection h3 {
+            color: #880e4f;
+            margin-top: 0;
+        }
+
+        .reflection textarea {
+            width: 100%;
+            min-height: 120px;
+            padding: 1rem;
+            border: 2px solid #f48fb1;
+            border-radius: 8px;
+            font-family: inherit;
+            font-size: 1rem;
+            margin-top: 1rem;
+            resize: vertical;
+        }
+
+        /* Navigation */
+        .chapter-nav {
+            max-width: 1100px;
+            margin: 2rem auto;
+            padding: 0 2rem;
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 1.5rem;
+        }
+
+        .nav-btn {
+            display: block;
+            padding: 1.5rem;
+            background: #fff;
+            border-radius: 12px;
+            text-decoration: none;
+            color: #333;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.08);
+            transition: all 0.3s;
+            border-left: 4px solid #1a237e;
+        }
+
+        .nav-btn:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 8px 20px rgba(26,35,126,0.15);
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: #fff;
+        }
+
+        .nav-btn .label {
+            font-size: 0.85rem;
+            color: #666;
+            margin-bottom: 0.3rem;
+        }
+
+        .nav-btn:hover .label {
+            color: #ffd54f;
+        }
+
+        .nav-btn .title {
+            font-weight: 700;
+            font-size: 1.05rem;
+        }
+
+        .nav-btn.next {
+            text-align: right;
+            border-left: none;
+            border-right: 4px solid #1a237e;
+        }
+
+        .nav-btn.next:hover {
+            border-right-color: #ffd54f;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+            margin-bottom: 0.3rem;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 1.8rem;
+            }
+
+            .section, .quiz {
+                padding: 1.5rem;
+            }
+
+            .sila-header {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .chapter-nav {
+                grid-template-columns: 1fr;
+            }
+
+            .nav-btn.next {
+                text-align: left;
+                border-right: none;
+                border-left: 4px solid #1a237e;
+            }
+
+            table {
+                font-size: 0.9rem;
+            }
+
+            table th, table td {
+                padding: 0.6rem;
+            }
+
+            .match-container {
+                grid-template-columns: 1fr;
+            }
+
+            .match-arrow {
+                transform: rotate(90deg);
+            }
+
+            .tf-options {
+                flex-direction: column;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <div class="nav-container">
+            <a href="index.html" class="brand">📘 Pkn Kelas 7</a>
+            <ul>
+                <li><a href="index.html#beranda">Beranda</a></li>
+                <li><a href="index.html#bab">Daftar Bab</a></li>
+                <li><a href="index.html#penulis">Penulis</a></li>
+                <li><a href="index.html#kontak">Kontak</a></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero">
+        <span class="chapter-badge">📖 BAB 2</span>
+        <h1>Penerapan Nilai-Nilai Pancasila</h1>
+        <p class="subtitle">Memahami makna sila-sila Pancasila dan penerapannya dalam kehidupan bermasyarakat, berbangsa, dan bernegara, baik di lingkungan keluarga, sekolah, maupun masyarakat.</p>
+    </header>
+
+    <!-- Learning Objectives -->
+    <div class="objectives">
+        <h2>🎯 Capaian Pembelajaran</h2>
+        <p style="margin-bottom: 1rem;">Setelah mempelajari bab ini, peserta didik diharapkan mampu:</p>
+        <ul>
+            <li>Menjelaskan makna setiap sila Pancasila secara mendalam.</li>
+            <li>Mengidentifikasi contoh penerapan nilai-nilai Pancasila dalam kehidupan sehari-hari.</li>
+            <li>Menganalisis pentingnya penerapan Pancasila dalam kehidupan bermasyarakat, berbangsa, dan bernegara.</li>
+            <li>Menunjukkan perilaku yang sesuai dengan nilai-nilai Pancasila di lingkungan keluarga, sekolah, dan masyarakat.</li>
+            <li>Mengevaluasi tantangan penerapan Pancasila di era digital dan globalisasi.</li>
+            <li>Menerapkan nilai-nilai Pancasila dalam kehidupan sehari-hari sebagai pelajar madrasah.</li>
+        </ul>
+    </div>
+
+    <!-- Main Content -->
+    <div class="content">
+
+        <!-- A. Pendahuluan -->
+        <div class="section">
+            <h2>A. Pendahuluan</h2>
+            <p>
+                Pancasila bukan hanya sekadar dasar negara atau simbol negara, melainkan <strong>pandangan hidup bangsa Indonesia</strong> yang harus diimplementasikan dalam kehidupan sehari-hari. Nilai-nilai yang terkandung dalam Pancasila akan bermakna apabila diamalkan dan diterapkan oleh setiap warga negara Indonesia dalam berbagai aspek kehidupan.
+            </p>
+            <p>
+                Penerapan nilai-nilai Pancasila dapat dilakukan di berbagai lingkungan, mulai dari lingkungan <strong>keluarga</strong>, <strong>sekolah</strong>, <strong>masyarakat</strong>, <strong>berbangsa</strong>, hingga <strong>bernegara</strong>. Setiap sila Pancasila memiliki makna dan nilai yang dapat dijadikan pedoman dalam bersikap dan berperilaku.
+            </p>
+
+            <div class="info-box">
+                <h4>💡 Tahukah Kamu?</h4>
+                <p>
+                    Menurut <strong>Prof. Dr. Notonagoro</strong>, Pancasila memiliki tiga dimensi nilai:
+                </p>
+                <ol style="margin-top: 0.5rem;">
+                    <li><strong>Nilai Dasar</strong> — Nilai yang bersifat mutlak dan tetap, seperti ketuhanan, kemanusiaan, persatuan, kerakyatan, dan keadilan.</li>
+                    <li><strong>Nilai Instrumental</strong> — Penjabaran nilai dasar dalam bentuk peraturan perundang-undangan, seperti UUD 1945, UU, dan peraturan lainnya.</li>
+                    <li><strong>Nilai Praksis</strong> — Realisasi nilai-nilai Pancasila dalam kehidupan sehari-hari yang nyata.</li>
+                </ol>
+            </div>
+
+            <p>
+                Pada bab ini, kita akan mempelajari makna dan penerapan setiap sila Pancasila dalam kehidupan sehari-hari. Mari kita pelajari dengan saksama agar kita dapat menjadi warga negara yang Pancasilais!
+            </p>
+        </div>
+
+        <!-- B. Sila Pertama -->
+        <div class="section">
+            <h2>B. Penerapan Sila Pertama: Ketuhanan Yang Maha Esa</h2>
+            
+            <div class="sila-card sila-1">
+                <div class="sila-header">
+                    <div class="sila-number">1</div>
+                    <div class="sila-info">
+                        <h3>Sila Pertama</h3>
+                        <p class="sila-text">"Ketuhanan Yang Maha Esa"</p>
+                        <p class="sila-symbol">🌟 Lambang: Bintang</p>
+                    </div>
+                </div>
+
+                <h4>Makna Sila Pertama</h4>
+                <p>
+                    Sila pertama mengandung makna bahwa bangsa Indonesia adalah bangsa yang religius dan beriman kepada Tuhan Yang Maha Esa. Sila ini menjamin kebebasan setiap warga negara untuk memeluk agama dan beribadah menurut agama dan kepercayaannya masing-masing.
+                </p>
+
+                <h4>Nilai-Nilai yang Terkandung</h4>
+                <ul>
+                    <li><strong>Ketaatan beribadah</strong> — Melaksanakan ibadah sesuai dengan agama dan kepercayaan masing-masing.</li>
+                    <li><strong>Toleransi beragama</strong> — Saling menghormati dan menghargai antarumat beragama.</li>
+                    <li><strong>Kerukunan hidup</strong> — Hidup berdampingan secara damai dengan pemeluk agama lain.</li>
+                    <li><strong>Kebebasan beragama</strong> — Hak untuk memilih dan memeluk agama tanpa paksaan.</li>
+                    <li><strong>Saling menghormati</strong> — Menghormati pelaksanaan ibadah agama lain.</li>
+                </ul>
+
+                <h4>Contoh Penerapan dalam Kehidupan Sehari-hari</h4>
+                <div class="implementation-grid">
+                    <div class="impl-item">
+                        <h5>🏠 Di Keluarga</h5>
+                        <p>• Melaksanakan ibadah bersama keluarga<br>• Membiasakan berdoa sebelum makan dan tidur<br>• Mengajarkan nilai-nilai agama kepada anak</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏫 Di Sekolah</h5>
+                        <p>• Memulai pelajaran dengan berdoa<br>• Menghormati teman yang sedang beribadah<br>• Tidak memaksakan agama kepada orang lain</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏘️ Di Masyarakat</h5>
+                        <p>• Hidup rukun dengan tetangga yang berbeda agama<br>• Menghormati perayaan hari besar agama lain<br>• Gotong royong membangun tempat ibadah</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🇮🇩 Di Bangsa & Negara</h5>
+                        <p>• Menjamin kebebasan beragama dalam konstitusi<br>• Negara memfasilitasi pelaksanaan ibadah<br>• Tidak ada diskriminasi berdasarkan agama</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h4>📚 Studi Kasus: Kerukunan di MTsN 6 Agam</h4>
+                <p>
+                    Di MTsN 6 Agam, meskipun mayoritas siswa beragama Islam, siswa diajarkan untuk menghormati perbedaan. Ketika ada teman yang berbeda agama (jika ada), mereka tetap berteman dengan baik, tidak mengejek, dan saling membantu dalam belajar. Ini adalah contoh nyata penerapan Sila Pertama di lingkungan madrasah.
+                </p>
+            </div>
+        </div>
+
+        <!-- C. Sila Kedua -->
+        <div class="section">
+            <h2>C. Penerapan Sila Kedua: Kemanusiaan yang Adil dan Beradab</h2>
+            
+            <div class="sila-card sila-2">
+                <div class="sila-header">
+                    <div class="sila-number">2</div>
+                    <div class="sila-info">
+                        <h3>Sila Kedua</h3>
+                        <p class="sila-text">"Kemanusiaan yang Adil dan Beradab"</p>
+                        <p class="sila-symbol">⛓️ Lambang: Rantai</p>
+                    </div>
+                </div>
+
+                <h4>Makna Sila Kedua</h4>
+                <p>
+                    Sila kedua mengandung makna bahwa setiap manusia memiliki martabat yang sama dan harus diperlakukan secara adil dan beradab. Sila ini menekankan pentingnya menghormati Hak Asasi Manusia (HAM), menjunjung tinggi nilai kemanusiaan, dan tidak melakukan diskriminasi terhadap sesama manusia.
+                </p>
+
+                <h4>Nilai-Nilai yang Terkandung</h4>
+                <ul>
+                    <li><strong>Pengakuan HAM</strong> — Mengakui persamaan hak dan kewajiban setiap manusia.</li>
+                    <li><strong>Kesetaraan</strong> — Tidak membedakan manusia berdasarkan suku, agama, ras, atau golongan.</li>
+                    <li><strong>Tenggang rasa</strong> — Saling menghargai perasaan dan pendapat orang lain.</li>
+                    <li><strong>Solidaritas sosial</strong> — Peduli dan membantu sesama yang membutuhkan.</li>
+                    <li><strong>Anti kekerasan</strong> — Menyelesaikan masalah tanpa kekerasan dan main hakim sendiri.</li>
+                    <li><strong>Berani membela kebenaran</strong> — Berani menegakkan keadilan dan kebenaran.</li>
+                </ul>
+
+                <h4>Contoh Penerapan dalam Kehidupan Sehari-hari</h4>
+                <div class="implementation-grid">
+                    <div class="impl-item">
+                        <h5>🏠 Di Keluarga</h5>
+                        <p>• Menyayangi semua anggota keluarga<br>• Tidak membeda-bedakan perlakuan antar saudara<br>• Menghormati orang tua dan guru</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏫 Di Sekolah</h5>
+                        <p>• Berteman dengan siapa saja tanpa membedakan<br>• Tidak melakukan bullying<br>• Membantu teman yang kesulitan belajar</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏘️ Di Masyarakat</h5>
+                        <p>• Membantu korban bencana alam<br>• Menjenguk tetangga yang sakit<br>• Menghormati hak-hak orang lain</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🇮🇩 Di Bangsa & Negara</h5>
+                        <p>• Menjunjung tinggi HAM<br>• Menolak segala bentuk diskriminasi<br>• Memberikan bantuan sosial bagi yang membutuhkan</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box renungkan">
+                <h4>🤔 Renungkan</h4>
+                <p>
+                    Pernahkah kamu melihat teman yang dibully atau diperlakukan tidak adil? Apa yang kamu rasakan? Bagaimana kamu dapat menerapkan Sila Kedua untuk membantu teman tersebut? Ingat, setiap manusia memiliki martabat yang sama di hadapan Tuhan Yang Maha Esa.
+                </p>
+            </div>
+        </div>
+
+        <!-- D. Sila Ketiga -->
+        <div class="section">
+            <h2>D. Penerapan Sila Ketiga: Persatuan Indonesia</h2>
+            
+            <div class="sila-card sila-3">
+                <div class="sila-header">
+                    <div class="sila-number">3</div>
+                    <div class="sila-info">
+                        <h3>Sila Ketiga</h3>
+                        <p class="sila-text">"Persatuan Indonesia"</p>
+                        <p class="sila-symbol">🌳 Lambang: Pohon Beringin</p>
+                    </div>
+                </div>
+
+                <h4>Makna Sila Ketiga</h4>
+                <p>
+                    Sila ketiga mengandung makna bahwa persatuan dan kesatuan bangsa Indonesia harus di atas segalanya. Meskipun Indonesia terdiri dari berbagai suku, agama, ras, dan budaya, kita tetap satu bangsa, satu tanah air, dan satu bahasa persatuan, yaitu Indonesia. Semboyan <strong>"Bhinneka Tunggal Ika"</strong> (Berbeda-beda tetapi tetap satu) menjadi pedoman hidup bermasyarakat.
+                </p>
+
+                <h4>Nilai-Nilai yang Terkandung</h4>
+                <ul>
+                    <li><strong>Cinta tanah air</strong> — Bangga menjadi bangsa Indonesia dan menjaga nama baik bangsa.</li>
+                    <li><strong>Nasionalisme</strong> — Mendahulukan kepentingan bangsa di atas kepentingan pribadi atau golongan.</li>
+                    <li><strong>Persatuan</strong> — Menjaga kebersamaan dan kerukunan dalam perbedaan.</li>
+                    <li><strong>Rela berkorban</strong> — Bersedia berkorban demi kepentingan bangsa dan negara.</li>
+                    <li><strong>Menghargai keberagaman</strong> — Menerima dan menghormati perbedaan suku, budaya, dan tradisi.</li>
+                </ul>
+
+                <h4>Contoh Penerapan dalam Kehidupan Sehari-hari</h4>
+                <div class="implementation-grid">
+                    <div class="impl-item">
+                        <h5>🏠 Di Keluarga</h5>
+                        <p>• Menjaga kerukunan antar anggota keluarga<br>• Melestarikan tradisi dan budaya keluarga<br>• Menghormati perbedaan pendapat dalam keluarga</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏫 Di Sekolah</h5>
+                        <p>• Mengikuti upacara bendera dengan khidmat<br>• Berteman dengan semua siswa tanpa membedakan suku<br>• Mempelajari dan melestarikan budaya daerah</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏘️ Di Masyarakat</h5>
+                        <p>• Mengikuti kegiatan kerja bakti<br>• Menjaga kerukunan dengan tetangga<br>• Menggunakan bahasa Indonesia dengan baik</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🇮🇩 Di Bangsa & Negara</h5>
+                        <p>• Membeli dan menggunakan produk dalam negeri<br>• Menjaga kedaulatan negara<br>• Berprestasi untuk mengharumkan nama bangsa</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="info-box wawasan">
+                <h4>🔍 Wawasan: Bhinneka Tunggal Ika</h4>
+                <p>
+                    Semboyan <strong>"Bhinneka Tunggal Ika"</strong> berasal dari kitab <em>Sutasoma</em> karya <strong>Mpu Tantular</strong> pada masa Kerajaan Majapahit. Semboyan ini berarti "Berbeda-beda tetapi tetap satu jua". Indonesia memiliki lebih dari <strong>1.300 suku bangsa</strong>, <strong>700 bahasa daerah</strong>, dan berbagai agama serta kepercayaan. Namun, semua itu dipersatukan dalam bingkai NKRI dengan semboyan Bhinneka Tunggal Ika.
+                </p>
+            </div>
+        </div>
+
+        <!-- E. Sila Keempat -->
+        <div class="section">
+            <h2>E. Penerapan Sila Keempat: Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan</h2>
+            
+            <div class="sila-card sila-4">
+                <div class="sila-header">
+                    <div class="sila-number">4</div>
+                    <div class="sila-info">
+                        <h3>Sila Keempat</h3>
+                        <p class="sila-text">"Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan"</p>
+                        <p class="sila-symbol">🐂 Lambang: Kepala Banteng</p>
+                    </div>
+                </div>
+
+                <h4>Makna Sila Keempat</h4>
+                <p>
+                    Sila keempat mengandung makna bahwa kedaulatan negara berada di tangan rakyat. Keputusan-keputusan penting harus diambil melalui musyawarah untuk mufakat, bukan dengan pemaksaan kehendak. Sila ini menekankan pentingnya <strong>demokrasi</strong>, <strong>musyawarah</strong>, dan <strong>menghargai pendapat orang lain</strong>.
+                </p>
+
+                <h4>Nilai-Nilai yang Terkandung</h4>
+                <ul>
+                    <li><strong>Musyawarah untuk mufakat</strong> — Menyelesaikan masalah melalui diskusi bersama.</li>
+                    <li><strong>Menghargai pendapat</strong> — Menghormati pendapat orang lain meskipun berbeda.</li>
+                    <li><strong>Tidak memaksakan kehendak</strong> — Tidak memaksakan pendapat pribadi kepada orang lain.</li>
+                    <li><strong>Demokrasi</strong> — Menghargai hasil keputusan bersama, seperti voting.</li>
+                    <li><strong>Bertanggung jawab</strong> — Melaksanakan hasil keputusan musyawarah dengan penuh tanggung jawab.</li>
+                    <li><strong>Hikmat kebijaksanaan</strong> — Mengambil keputusan dengan akal sehat dan hati nurani.</li>
+                </ul>
+
+                <h4>Contoh Penerapan dalam Kehidupan Sehari-hari</h4>
+                <div class="implementation-grid">
+                    <div class="impl-item">
+                        <h5>🏠 Di Keluarga</h5>
+                        <p>• Musyawarah menentukan tujuan liburan<br>• Berdiskusi menyelesaikan masalah keluarga<br>• Menghargai pendapat setiap anggota keluarga</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏫 Di Sekolah</h5>
+                        <p>• Pemilihan ketua kelas secara demokratis<br>• Musyawarah dalam kerja kelompok<br>• Menghargai pendapat teman saat diskusi</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏘️ Di Masyarakat</h5>
+                        <p>• Musyawarah desa untuk mengambil keputusan<br>• Pemilihan ketua RT/RW secara demokratis<br>• Gotong royong menyelesaikan masalah desa</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🇮🇩 Di Bangsa & Negara</h5>
+                        <p>• Pemilihan umum (Pemilu) untuk memilih pemimpin<br>• DPR sebagai wakil rakyat<br>• Musyawarah MPR untuk mengubah UUD</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="case-study">
+                <h4>📚 Studi Kasus: Musyawarah di Kelas</h4>
+                <p>
+                    Di kelas VII MTsN 6 Agam, akan dipilih ketua kelas yang baru. Bu Eva sebagai wali kelas mengajak siswa untuk bermusyawarah. Setiap siswa berhak mencalonkan diri dan memberikan pendapat. Setelah diskusi yang hangat, dilakukan voting dan terpilih ketua kelas yang baru. Semua siswa menerima hasil keputusan dengan lapang dada. Ini adalah contoh penerapan Sila Keempat di lingkungan sekolah.
+                </p>
+            </div>
+        </div>
+
+        <!-- F. Sila Kelima -->
+        <div class="section">
+            <h2>F. Penerapan Sila Kelima: Keadilan Sosial bagi Seluruh Rakyat Indonesia</h2>
+            
+            <div class="sila-card sila-5">
+                <div class="sila-header">
+                    <div class="sila-number">5</div>
+                    <div class="sila-info">
+                        <h3>Sila Kelima</h3>
+                        <p class="sila-text">"Keadilan Sosial bagi Seluruh Rakyat Indonesia"</p>
+                        <p class="sila-symbol">🌾 Lambang: Padi dan Kapas</p>
+                    </div>
+                </div>
+
+                <h4>Makna Sila Kelima</h4>
+                <p>
+                    Sila kelima mengandung makna bahwa negara bertujuan mewujudkan keadilan sosial bagi seluruh rakyat Indonesia. Setiap warga negara berhak mendapatkan perlakuan yang adil, baik dalam bidang ekonomi, politik, sosial, maupun hukum. Sila ini menekankan pentingnya <strong>gotong royong</strong>, <strong>kerja keras</strong>, dan <strong>menghargai hasil karya orang lain</strong>.
+                </p>
+
+                <h4>Nilai-Nilai yang Terkandung</h4>
+                <ul>
+                    <li><strong>Keadilan</strong> — Memberikan hak kepada yang berhak dan tidak berbuat zalim.</li>
+                    <li><strong>Gotong royong</strong> — Bekerja sama untuk kepentingan bersama.</li>
+                    <li><strong>Kerja keras</strong> — Bekerja dengan sungguh-sungguh untuk meraih cita-cita.</li>
+                    <li><strong>Hidup hemat</strong> — Tidak boros dan tidak bergaya hidup mewah.</li>
+                    <li><strong>Menghargai karya orang lain</strong> — Menghargai hasil karya dan prestasi orang lain.</li>
+                    <li><strong>Suka memberi pertolongan</strong> — Membantu orang yang membutuhkan.</li>
+                </ul>
+
+                <h4>Contoh Penerapan dalam Kehidupan Sehari-hari</h4>
+                <div class="implementation-grid">
+                    <div class="impl-item">
+                        <h5>🏠 Di Keluarga</h5>
+                        <p>• Membagi tugas rumah secara adil<br>• Orang tua bersikap adil kepada semua anak<br>• Hidup hemat dan tidak boros</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏫 Di Sekolah</h5>
+                        <p>• Guru bersikap adil kepada semua siswa<br>• Melaksanakan piket kelas secara bergiliran<br>• Menghargai prestasi teman</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🏘️ Di Masyarakat</h5>
+                        <p>• Gotong royong membangun fasilitas umum<br>• Membayar pajak tepat waktu<br>• Membantu tetangga yang kesusahan</p>
+                    </div>
+                    <div class="impl-item">
+                        <h5>🇮🇩 Di Bangsa & Negara</h5>
+                        <p>• Pembangunan yang merata di seluruh daerah<br>• Hukum yang adil untuk semua warga negara<br>• Program bantuan sosial bagi masyarakat miskin</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- G. Tantangan di Era Digital -->
+        <div class="section">
+            <h2>G. Tantangan Penerapan Pancasila di Era Digital</h2>
+            <p>
+                Di era digital dan globalisasi saat ini, penerapan nilai-nilai Pancasila menghadapi berbagai tantangan. Perkembangan teknologi informasi yang pesat membawa dampak positif dan negatif bagi kehidupan bermasyarakat, berbangsa, dan bernegara.
+            </p>
+
+            <h3>1. Tantangan yang Dihadapi</h3>
+            <ul>
+                <li><strong>Hoaks dan berita bohong</strong> — Penyebaran informasi palsu yang dapat memecah belah persatuan bangsa.</li>
+                <li><strong>Ujaran kebencian (hate speech)</strong> — Komentar negatif di media sosial yang menyinggung SARA.</li>
+                <li><strong>Individualisme</strong> — Sikap mementingkan diri sendiri akibat penggunaan gadget berlebihan.</li>
+                <li><strong>Budaya asing yang tidak sesuai</strong> — Masuknya budaya asing yang bertentangan dengan nilai Pancasila.</li>
+                <li><strong>Cyber bullying</strong> — Perundungan di dunia maya yang melanggar nilai kemanusiaan.</li>
+                <li><strong>Radikalisme</strong> — Paham ekstrem yang bertentangan dengan Pancasila.</li>
+            </ul>
+
+            <h3>2. Strategi Menghadapi Tantangan</h3>
+            <ul>
+                <li><strong>Memperkuat literasi digital</strong> — Mampu memilah informasi yang benar dan hoax.</li>
+                <li><strong>Etika bermedia sosial</strong> — Berinteraksi di media sosial dengan santun dan beradab.</li>
+                <li><strong>Meneladani nilai Pancasila</strong> — Mengamalkan Pancasila dalam kehidupan sehari-hari, termasuk di dunia maya.</li>
+                <li><strong>Berpikir kritis</strong> — Tidak mudah terpengaruh oleh informasi yang belum jelas kebenarannya.</li>
+                <li><strong>Menguatkan karakter</strong> — Membangun karakter yang kuat berdasarkan nilai-nilai Pancasila.</li>
+            </ul>
+
+            <div class="info-box digital">
+                <h4>📱 Pancasila di Era Digital</h4>
+                <p>
+                    Sebagai pelajar madrasah di era digital, kita harus menjadi <strong>"warga digital yang Pancasilais"</strong>. Artinya, kita harus menerapkan nilai-nilai Pancasila tidak hanya di dunia nyata, tetapi juga di dunia maya. Contoh: tidak menyebarkan hoaks (Sila 1 & 3), tidak melakukan cyber bullying (Sila 2), berdiskusi dengan santun di media sosial (Sila 4), dan menghargai karya orang lain di internet (Sila 5).
+                </p>
+            </div>
+
+            <!-- Activity -->
+            <div class="activity">
+                <h3>📝 Aktivitas 2.1: Mengamati Penerapan Pancasila di Lingkungan Sekitar</h3>
+                <p><strong>Tujuan:</strong> Mengidentifikasi penerapan nilai-nilai Pancasila di lingkungan sekitar.</p>
+                <p><strong>Langkah Kegiatan:</strong></p>
+                <ol>
+                    <li>Bentuklah kelompok yang terdiri atas 4-5 orang!</li>
+                    <li>Amatilah lingkungan di sekitar madrasah atau tempat tinggalmu!</li>
+                    <li>Identifikasi contoh penerapan masing-masing sila Pancasila yang kamu temukan!</li>
+                    <li>Dokumentasikan dalam bentuk tabel atau foto (jika diperbolehkan)!</li>
+                    <li>Sajikan hasil pengamatanmu dalam bentuk poster atau presentasi!</li>
+                    <li>Presentasikan hasil kerja kelompok di depan kelas!</li>
+                </ol>
+            </div>
+
+            <div class="activity">
+                <h3>📝 Aktivitas 2.2: Studi Kasus Penerapan Pancasila</h3>
+                <p><strong>Tujuan:</strong> Menganalisis kasus nyata penerapan Pancasila dalam kehidupan sehari-hari.</p>
+                <p><strong>Langkah Kegiatan:</strong></p>
+                <ol>
+                    <li>Baca dan pahamilah kasus berikut: "Di sebuah desa, terjadi konflik antara dua kelompok warga karena perbedaan pilihan politik. Konflik ini memanas dan hampir terjadi perkelahian."</li>
+                    <li>Diskusikan dengan kelompokmu: Sila-sila Pancasila mana yang dilanggar dalam kasus tersebut?</li>
+                    <li>Rumuskan solusi berdasarkan nilai-nilai Pancasila untuk menyelesaikan konflik tersebut!</li>
+                    <li>Sajikan hasil diskusi dalam bentuk role play (bermain peran) di depan kelas!</li>
+                </ol>
+            </div>
+        </div>
+
+        <!-- Summary -->
+        <div class="summary">
+            <h3>📋 Rangkuman</h3>
+            <ul>
+                <li>Pancasila memiliki tiga dimensi nilai: nilai dasar, nilai instrumental, dan nilai praksis.</li>
+                <li>Sila Pertama (Ketuhanan Yang Maha Esa) menekankan ketaatan beribadah, toleransi beragama, dan kerukunan hidup.</li>
+                <li>Sila Kedua (Kemanusiaan yang Adil dan Beradab) menekankan pengakuan HAM, kesetaraan, tenggang rasa, dan solidaritas sosial.</li>
+                <li>Sila Ketiga (Persatuan Indonesia) menekankan cinta tanah air, nasionalisme, persatuan, dan menghargai keberagaman.</li>
+                <li>Sila Keempat (Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan) menekankan musyawarah, demokrasi, dan menghargai pendapat.</li>
+                <li>Sila Kelima (Keadilan Sosial bagi Seluruh Rakyat Indonesia) menekankan keadilan, gotong royong, kerja keras, dan menghargai karya orang lain.</li>
+                <li>Penerapan Pancasila dapat dilakukan di lingkungan keluarga, sekolah, masyarakat, berbangsa, dan bernegara.</li>
+                <li>Di era digital, penerapan Pancasila menghadapi tantangan seperti hoaks, cyber bullying, dan individualisme, yang dapat diatasi dengan literasi digital dan penguatan karakter.</li>
+            </ul>
+        </div>
+
+        <!-- Glossary -->
+        <div class="glossary">
+            <h3 style="color:#1a237e; margin-bottom:1rem;">📖 Glosarium</h3>
+            <div class="glossary-item">
+                <strong>Pancasila</strong> — Dasar negara Indonesia yang terdiri atas lima sila, menjadi pandangan hidup bangsa dan sumber dari segala sumber hukum.
+            </div>
+            <div class="glossary-item">
+                <strong>Toleransi</strong> — Sikap saling menghormati dan menghargai perbedaan, terutama dalam hal agama dan kepercayaan.
+            </div>
+            <div class="glossary-item">
+                <strong>HAM (Hak Asasi Manusia)</strong> — Hak dasar yang melekat pada setiap manusia sebagai anugerah Tuhan Yang Maha Esa.
+            </div>
+            <div class="glossary-item">
+                <strong>Bhinneka Tunggal Ika</strong> — Semboyan negara Indonesia yang berarti "Berbeda-beda tetapi tetap satu jua", berasal dari kitab Sutasoma karya Mpu Tantular.
+            </div>
+            <div class="glossary-item">
+                <strong>Musyawarah</strong> — Proses pembahasan suatu masalah secara bersama-sama untuk mencapai keputusan berdasarkan mufakat.
+            </div>
+            <div class="glossary-item">
+                <strong>Demokrasi</strong> — Sistem pemerintahan dari rakyat, oleh rakyat, dan untuk rakyat, di mana kedaulatan berada di tangan rakyat.
+            </div>
+            <div class="glossary-item">
+                <strong>Gotong Royong</strong> — Budaya kerja sama dalam masyarakat Indonesia untuk menyelesaikan suatu pekerjaan secara bersama-sama.
+            </div>
+            <div class="glossary-item">
+                <strong>Hoaks</strong> — Informasi bohong atau palsu yang sengaja disebarkan untuk menipu atau merugikan orang lain.
+            </div>
+            <div class="glossary-item">
+                <strong>Cyber Bullying</strong> — Perundungan atau intimidasi yang dilakukan melalui media digital, seperti media sosial atau pesan singkat.
+            </div>
+            <div class="glossary-item">
+                <strong>Literasi Digital</strong> — Kemampuan untuk menggunakan, memahami, dan mengevaluasi informasi dari berbagai sumber digital secara kritis.
+            </div>
+        </div>
+
+        <!-- Reflection -->
+        <div class="reflection">
+            <h3>🌟 Refleksi</h3>
+            <p>Setelah mempelajari bab ini, cobalah renungkan pertanyaan-pertanyaan berikut dan tuliskan jawabanmu:</p>
+            <ol style="margin-left: 1.5rem; margin-top: 1rem;">
+                <li>Sila Pancasila mana yang paling sering kamu terapkan dalam kehidupan sehari-hari? Jelaskan contoh konkretnya!</li>
+                <li>Apa tantangan terbesar dalam menerapkan nilai-nilai Pancasila di era digital saat ini? Bagaimana caramu mengatasinya?</li>
+                <li>Sebagai pelajar MTsN, bagaimana caramu menjadi teladan dalam penerapan nilai-nilai Pancasila di lingkungan madrasah?</li>
+            </ol>
+            <textarea placeholder="Tuliskan refleksi kamu di sini..."></textarea>
+        </div>
+    </div>
+
+    <!-- ============================================ -->
+    <!-- UJI FORMATIF - VERSI LENGKAP & KOMPREHENSIF -->
+    <!-- ============================================ -->
+    <div class="quiz" id="quiz-section">
+        <h2>📝 Uji Formatif Bab 2</h2>
+        
+        <div class="quiz-intro">
+            <h3>🎯 Petunjuk Pengerjaan</h3>
+            <p style="margin: 0;">Uji formatif ini terdiri dari <strong>5 bagian</strong> yang menguji pemahamanmu tentang <strong>Penerapan Nilai-Nilai Pancasila</strong>. Kerjakan dengan teliti dan jujur!</p>
+            <ul style="margin-top: 0.8rem; margin-bottom: 0;">
+                <li><strong>Bagian A:</strong> 10 soal Pilihan Ganda (Bobot: 20%)</li>
+                <li><strong>Bagian B:</strong> 5 soal Benar/Salah (Bobot: 10%)</li>
+                <li><strong>Bagian C:</strong> 5 soal Menjodohkan (Bobot: 10%)</li>
+                <li><strong>Bagian D:</strong> 5 soal Isian Singkat (Bobot: 10%)</li>
+                <li><strong>Bagian E:</strong> 5 soal Uraian HOTS (Bobot: 50%)</li>
+            </ul>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- BAGIAN A: PILIHAN GANDA (10 SOAL) -->
+        <!-- ========================================== -->
+        <span class="quiz-type">📌 Bagian A: Pilihan Ganda</span>
+        <p style="margin-bottom: 1rem; color:#555; font-size:0.95rem;"><em>Pilihlah satu jawaban yang paling tepat!</em></p>
+
+        <div class="question" data-type="mc" data-answer="c">
+            <p class="q-text"><span class="q-num">1</span>Sila pertama Pancasila, "Ketuhanan Yang Maha Esa", mengandung makna bahwa bangsa Indonesia...</p>
+            <ul class="options">
+                <li data-value="a">a. Memiliki satu agama resmi</li>
+                <li data-value="b">b. Wajib memeluk agama tertentu</li>
+                <li data-value="c">c. Adalah bangsa yang religius dan menghormati kebebasan beragama</li>
+                <li data-value="d">d. Tidak boleh memiliki perbedaan agama</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: C</strong><br>
+                <small>Sila pertama mengandung makna bahwa bangsa Indonesia adalah bangsa yang religius, beriman kepada Tuhan Yang Maha Esa, dan menghormati kebebasan setiap warga negara untuk memeluk agama dan beribadah sesuai keyakinannya.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="b">
+            <p class="q-text"><span class="q-num">2</span>Berikut ini yang merupakan contoh penerapan Sila Kedua dalam kehidupan di sekolah adalah...</p>
+            <ul class="options">
+                <li data-value="a">a. Melaksanakan upacara bendera dengan khidmat</li>
+                <li data-value="b">b. Tidak melakukan bullying kepada teman</li>
+                <li data-value="c">c. Memilih ketua kelas melalui voting</li>
+                <li data-value="d">d. Membayar pajak tepat waktu</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: B</strong><br>
+                <small>Tidak melakukan bullying merupakan penerapan Sila Kedua (Kemanusiaan yang Adil dan Beradab) karena menghormati martabat manusia dan menjunjung tinggi nilai kemanusiaan.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="a">
+            <p class="q-text"><span class="q-num">3</span>Semboyan "Bhinneka Tunggal Ika" merupakan perwujudan dari sila...</p>
+            <ul class="options">
+                <li data-value="a">a. Sila Ketiga: Persatuan Indonesia</li>
+                <li data-value="b">b. Sila Kedua: Kemanusiaan yang Adil dan Beradab</li>
+                <li data-value="c">c. Sila Keempat: Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan</li>
+                <li data-value="d">d. Sila Kelima: Keadilan Sosial bagi Seluruh Rakyat Indonesia</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: A</strong><br>
+                <small>"Bhinneka Tunggal Ika" (Berbeda-beda tetapi tetap satu jua) merupakan perwujudan Sila Ketiga karena menekankan persatuan Indonesia di tengah keberagaman suku, agama, ras, dan budaya.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="d">
+            <p class="q-text"><span class="q-num">4</span>Musyawarah untuk mencapai mufakat merupakan penerapan nilai-nilai dari sila...</p>
+            <ul class="options">
+                <li data-value="a">a. Sila Pertama</li>
+                <li data-value="b">b. Sila Kedua</li>
+                <li data-value="c">c. Sila Ketiga</li>
+                <li data-value="d">d. Sila Keempat</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: D</strong><br>
+                <small>Musyawarah untuk mufakat merupakan ciri khas demokrasi Pancasila yang menjadi inti dari Sila Keempat: Kerakyatan yang Dipimpin oleh Hikmat Kebijaksanaan dalam Permusyawaratan/Perwakilan.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="c">
+            <p class="q-text"><span class="q-num">5</span>Gotong royong membangun fasilitas desa merupakan penerapan sila...</p>
+            <ul class="options">
+                <li data-value="a">a. Sila Pertama</li>
+                <li data-value="b">b. Sila Kedua</li>
+                <li data-value="c">c. Sila Kelima</li>
+                <li data-value="d">d. Sila Ketiga</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: C</strong><br>
+                <small>Gotong royong merupakan nilai utama Sila Kelima (Keadilan Sosial bagi Seluruh Rakyat Indonesia) yang menekankan kerja sama untuk kepentingan bersama dan keadilan sosial.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="b">
+            <p class="q-text"><span class="q-num">6</span>Menurut Prof. Dr. Notonagoro, Pancasila memiliki tiga dimensi nilai, yaitu...</p>
+            <ul class="options">
+                <li data-value="a">a. Nilai dasar, nilai tambahan, nilai praksis</li>
+                <li data-value="b">b. Nilai dasar, nilai instrumental, nilai praksis</li>
+                <li data-value="c">c. Nilai utama, nilai sekunder, nilai praksis</li>
+                <li data-value="d">d. Nilai absolut, nilai relatif, nilai praksis</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: B</strong><br>
+                <small>Menurut Notonagoro, Pancasila memiliki tiga dimensi nilai: nilai dasar (mutlak), nilai instrumental (penjabaran dalam peraturan), dan nilai praksis (penerapan nyata dalam kehidupan sehari-hari).</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="a">
+            <p class="q-text"><span class="q-num">7</span>Berikut ini yang merupakan tantangan penerapan Pancasila di era digital adalah...</p>
+            <ul class="options">
+                <li data-value="a">a. Penyebaran hoaks dan cyber bullying</li>
+                <li data-value="b">b. Gotong royong di masyarakat</li>
+                <li data-value="c">c. Musyawarah desa</li>
+                <li data-value="d">d. Pemilihan ketua RT</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: A</strong><br>
+                <small>Di era digital, tantangan penerapan Pancasila antara lain penyebaran hoaks (berita bohong), cyber bullying, ujaran kebencian, dan individualisme akibat penggunaan gadget berlebihan.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="d">
+            <p class="q-text"><span class="q-num">8</span>Lambang sila-sila Pancasila secara berurutan adalah...</p>
+            <ul class="options">
+                <li data-value="a">a. Bintang, pohon beringin, rantai, kepala banteng, padi dan kapas</li>
+                <li data-value="b">b. Rantai, bintang, pohon beringin, padi dan kapas, kepala banteng</li>
+                <li data-value="c">c. Pohon beringin, bintang, rantai, kepala banteng, padi dan kapas</li>
+                <li data-value="d">d. Bintang, rantai, pohon beringin, kepala banteng, padi dan kapas</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: D</strong><br>
+                <small>Lambang sila-sila Pancasila secara berurutan: Sila 1 (Bintang), Sila 2 (Rantai), Sila 3 (Pohon Beringin), Sila 4 (Kepala Banteng), Sila 5 (Padi dan Kapas).</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="c">
+            <p class="q-text"><span class="q-num">9</span>Sebagai pelajar madrasah, contoh penerapan Sila Pertama yang paling tepat adalah...</p>
+            <ul class="options">
+                <li data-value="a">a. Mengikuti pemilihan ketua OSIS</li>
+                <li data-value="b">b. Membantu teman yang kesulitan belajar</li>
+                <li data-value="c">c. Melaksanakan salat berjamaah dan menghormati teman yang berbeda agama</li>
+                <li data-value="d">d. Membeli produk dalam negeri</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: C</strong><br>
+                <small>Sebagai pelajar madrasah, penerapan Sila Pertama yang paling tepat adalah melaksanakan ibadah (seperti salat berjamaah) dan menghormati teman yang berbeda agama, sesuai dengan nilai ketuhanan dan toleransi.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="mc" data-answer="b">
+            <p class="q-text"><span class="q-num">10</span>Kitab Sutasoma yang memuat semboyan "Bhinneka Tunggal Ika" ditulis oleh...</p>
+            <ul class="options">
+                <li data-value="a">a. Mpu Gandring</li>
+                <li data-value="b">b. Mpu Tantular</li>
+                <li data-value="c">c. Mpu Prapanca</li>
+                <li data-value="d">d. Mpu Sendok</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: B</strong><br>
+                <small>Semboyan "Bhinneka Tunggal Ika" berasal dari kitab Sutasoma karya Mpu Tantular pada masa Kerajaan Majapahit. Mpu Prapanca adalah penulis kitab Negarakertagama.</small>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- BAGIAN B: BENAR/SALAH (5 SOAL) -->
+        <!-- ========================================== -->
+        <span class="quiz-type tf">✅❌ Bagian B: Benar atau Salah</span>
+        <p style="margin-bottom: 1rem; color:#555; font-size:0.95rem;"><em>Tentukan apakah pernyataan berikut BENAR atau SALAH!</em></p>
+
+        <div class="question" data-type="tf" data-answer="benar">
+            <p class="q-text"><span class="q-num">1</span>Sila Kedua Pancasila menekankan pentingnya menghormati Hak Asasi Manusia (HAM).</p>
+            <ul class="options tf-options">
+                <li data-value="benar">✅ BENAR</li>
+                <li data-value="salah">❌ SALAH</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: BENAR</strong><br>
+                <small>Sila Kedua (Kemanusiaan yang Adil dan Beradab) memang menekankan pengakuan HAM, kesetaraan, dan perlakuan yang adil terhadap sesama manusia.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="tf" data-answer="salah">
+            <p class="q-text"><span class="q-num">2</span>Lambang Sila Ketiga Pancasila adalah kepala banteng.</p>
+            <ul class="options tf-options">
+                <li data-value="benar">✅ BENAR</li>
+                <li data-value="salah">❌ SALAH</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: SALAH</strong><br>
+                <small>Lambang Sila Ketiga adalah <strong>pohon beringin</strong>, yang melambangkan tempat berlindung dan persatuan. Kepala banteng adalah lambang Sila Keempat.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="tf" data-answer="benar">
+            <p class="q-text"><span class="q-num">3</span>Musyawarah untuk mufakat merupakan ciri khas demokrasi Pancasila yang sesuai dengan Sila Keempat.</p>
+            <ul class="options tf-options">
+                <li data-value="benar">✅ BENAR</li>
+                <li data-value="salah">❌ SALAH</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: BENAR</strong><br>
+                <small>Musyawarah untuk mufakat merupakan inti dari Sila Keempat, yaitu pengambilan keputusan melalui diskusi bersama untuk mencapai kesepakatan.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="tf" data-answer="salah">
+            <p class="q-text"><span class="q-num">4</span>Di era digital, penerapan Pancasila hanya berlaku di dunia nyata, tidak di dunia maya.</p>
+            <ul class="options tf-options">
+                <li data-value="benar">✅ BENAR</li>
+                <li data-value="salah">❌ SALAH</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: SALAH</strong><br>
+                <small>Pancasila harus diterapkan di <strong>semua aspek kehidupan</strong>, termasuk di dunia maya. Kita harus menjadi "warga digital yang Pancasilais" dengan tidak menyebarkan hoaks, tidak melakukan cyber bullying, dan berinteraksi secara santun di media sosial.</small>
+            </div>
+        </div>
+
+        <div class="question" data-type="tf" data-answer="benar">
+            <p class="q-text"><span class="q-num">5</span>Gotong royong merupakan perwujudan nilai-nilai Sila Kelima Pancasila.</p>
+            <ul class="options tf-options">
+                <li data-value="benar">✅ BENAR</li>
+                <li data-value="salah">❌ SALAH</li>
+            </ul>
+            <div class="answer-key">
+                <strong>✅ Jawaban: BENAR</strong><br>
+                <small>Gotong royong merupakan nilai utama Sila Kelima (Keadilan Sosial bagi Seluruh Rakyat Indonesia) yang menekankan kerja sama untuk kepentingan bersama dan keadilan sosial.</small>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- BAGIAN C: MENJODOHKAN (5 SOAL) -->
+        <!-- ========================================== -->
+        <span class="quiz-type match">🔗 Bagian C: Menjodohkan</span>
+        <p style="margin-bottom: 1rem; color:#555; font-size:0.95rem;"><em>Pasangkan perilaku di sebelah kiri dengan sila Pancasila yang tepat di sebelah kanan!</em></p>
+
+        <div class="question" data-type="match">
+            <p class="q-text"><span class="q-num">1</span>Pasangkan perilaku dengan sila Pancasila yang sesuai:</p>
+            
+            <div class="match-container">
+                <div class="match-item">Melaksanakan salat berjamaah dan menghormati agama lain</div>
+                <div class="match-arrow">→</div>
+                <select class="match-select" data-correct="Sila 1">
+                    <option value="">-- Pilih sila --</option>
+                    <option value="Sila 1">Sila 1: Ketuhanan Yang Maha Esa</option>
+                    <option value="Sila 2">Sila 2: Kemanusiaan yang Adil dan Beradab</option>
+                    <option value="Sila 3">Sila 3: Persatuan Indonesia</option>
+                    <option value="Sila 4">Sila 4: Kerakyatan yang Dipimpin oleh Hikmat...</option>
+                    <option value="Sila 5">Sila 5: Keadilan Sosial bagi Seluruh Rakyat Indonesia</option>
+                </select>
+            </div>
+
+            <div class="match-container">
+                <div class="match-item">Tidak melakukan bullying dan membantu korban bencana</div>
+                <div class="match-arrow">→</div>
+                <select class="match-select" data-correct="Sila 2">
+                    <option value="">-- Pilih sila --</option>
+                    <option value="Sila 1">Sila 1: Ketuhanan Yang Maha Esa</option>
+                    <option value="Sila 2">Sila 2: Kemanusiaan yang Adil dan Beradab</option>
+                    <option value="Sila 3">Sila 3: Persatuan Indonesia</option>
+                    <option value="Sila 4">Sila 4: Kerakyatan yang Dipimpin oleh Hikmat...</option>
+                    <option value="Sila 5">Sila 5: Keadilan Sosial bagi Seluruh Rakyat Indonesia</option>
+                </select>
+            </div>
+
+            <div class="match-container">
+                <div class="match-item">Mengikuti upacara bendera dan mencintai produk dalam negeri</div>
+                <div class="match-arrow">→</div>
+                <select class="match-select" data-correct="Sila 3">
+                    <option value="">-- Pilih sila --</option>
+                    <option value="Sila 1">Sila 1: Ketuhanan Yang Maha Esa</option>
+                    <option value="Sila 2">Sila 2: Kemanusiaan yang Adil dan Beradab</option>
+                    <option value="Sila 3">Sila 3: Persatuan Indonesia</option>
+                    <option value="Sila 4">Sila 4: Kerakyatan yang Dipimpin oleh Hikmat...</option>
+                    <option value="Sila 5">Sila 5: Keadilan Sosial bagi Seluruh Rakyat Indonesia</option>
+                </select>
+            </div>
+
+            <div class="match-container">
+                <div class="match-item">Pemilihan ketua kelas secara demokratis dan musyawarah</div>
+                <div class="match-arrow">→</div>
+                <select class="match-select" data-correct="Sila 4">
+                    <option value="">-- Pilih sila --</option>
+                    <option value="Sila 1">Sila 1: Ketuhanan Yang Maha Esa</option>
+                    <option value="Sila 2">Sila 2: Kemanusiaan yang Adil dan Beradab</option>
+                    <option value="Sila 3">Sila 3: Persatuan Indonesia</option>
+                    <option value="Sila 4">Sila 4: Kerakyatan yang Dipimpin oleh Hikmat...</option>
+                    <option value="Sila 5">Sila 5: Keadilan Sosial bagi Seluruh Rakyat Indonesia</option>
+                </select>
+            </div>
+
+            <div class="match-container">
+                <div class="match-item">Gotong royong dan menghargai prestasi teman</div>
+                <div class="match-arrow">→</div>
+                <select class="match-select" data-correct="Sila 5">
+                    <option value="">-- Pilih sila --</option>
+                    <option value="Sila 1">Sila 1: Ketuhanan Yang Maha Esa</option>
+                    <option value="Sila 2">Sila 2: Kemanusiaan yang Adil dan Beradab</option>
+                    <option value="Sila 3">Sila 3: Persatuan Indonesia</option>
+                    <option value="Sila 4">Sila 4: Kerakyatan yang Dipimpin oleh Hikmat...</option>
+                    <option value="Sila 5">Sila 5: Keadilan Sosial bagi Seluruh Rakyat Indonesia</option>
+                </select>
+            </div>
+
+            <div class="answer-key">
+                <strong>✅ Jawaban:</strong><br>
+                <small>
+                    • Melaksanakan salat berjamaah dan menghormati agama lain → <strong>Sila 1</strong><br>
+                    • Tidak melakukan bullying dan membantu korban bencana → <strong>Sila 2</strong><br>
+                    • Mengikuti upacara bendera dan mencintai produk dalam negeri → <strong>Sila 3</strong><br>
+                    • Pemilihan ketua kelas secara demokratis dan musyawarah → <strong>Sila 4</strong><br>
+                    • Gotong royong dan menghargai prestasi teman → <strong>Sila 5</strong>
+                </small>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- BAGIAN D: ISIAN SINGKAT (5 SOAL) -->
+        <!-- ========================================== -->
+        <span class="quiz-type fill">✏️ Bagian D: Isian Singkat</span>
+        <p style="margin-bottom: 1rem; color:#555; font-size:0.95rem;"><em>Isilah titik-titik di bawah ini dengan jawaban yang tepat!</em></p>
+
+        <div class="question" data-type="fill" data-answer="bhinneka tunggal ika">
+            <p class="q-text"><span class="q-num">1</span>Semboyan negara Indonesia yang berarti "Berbeda-beda tetapi tetap satu jua" adalah ....</p>
+            <input type="text" class="fill-input" placeholder="Ketik jawaban di sini...">
+            <div class="answer-key">
+                <strong>✅ Jawaban: Bhinneka Tunggal Ika</strong>
+            </div>
+        </div>
+
+        <div class="question" data-type="fill" data-answer="mpu tantular">
+            <p class="q-text"><span class="q-num">2</span>Semboyan Bhinneka Tunggal Ika berasal dari kitab Sutasoma karya ....</p>
+            <input type="text" class="fill-input" placeholder="Ketik jawaban di sini...">
+            <div class="answer-key">
+                <strong>✅ Jawaban: Mpu Tantular</strong>
+            </div>
+        </div>
+
+        <div class="question" data-type="fill" data-answer="pohon beringin">
+            <p class="q-text"><span class="q-num">3</span>Lambang Sila Ketiga Pancasila adalah ....</p>
+            <input type="text" class="fill-input" placeholder="Ketik jawaban di sini...">
+            <div class="answer-key">
+                <strong>✅ Jawaban: Pohon Beringin</strong>
+            </div>
+        </div>
+
+        <div class="question" data-type="fill" data-answer="musyawarah">
+            <p class="q-text"><span class="q-num">4</span>Pengambilan keputusan bersama untuk mencapai mufakat disebut ....</p>
+            <input type="text" class="fill-input" placeholder="Ketik jawaban di sini...">
+            <div class="answer-key">
+                <strong>✅ Jawaban: Musyawarah</strong>
+            </div>
+        </div>
+
+        <div class="question" data-type="fill" data-answer="hoaks, cyber bullying">
+            <p class="q-text"><span class="q-num">5</span>Dua tantangan penerapan Pancasila di era digital adalah .... dan ....</p>
+            <input type="text" class="fill-input" placeholder="Ketik jawaban (pisahkan dengan koma)...">
+            <div class="answer-key">
+                <strong>✅ Jawaban: Hoaks (berita bohong) dan Cyber Bullying</strong><br>
+                <small>Tantangan lainnya: ujaran kebencian, individualisme, radikalisme, budaya asing yang tidak sesuai.</small>
+            </div>
+        </div>
+
+        <!-- ========================================== -->
+        <!-- BAGIAN E: URAIAN HOTS (5 SOAL) -->
+        <!-- ========================================== -->
+        <span class="quiz-type essay">📝 Bagian E: Uraian (HOTS)</span>
+        <p style="margin-bottom: 1rem; color:#555; font-size:0.95rem;"><em>Jawablah pertanyaan-pertanyaan berikut dengan jelas, tepat, dan mendalam!</em></p>
+
+        <div class="question" data-type="essay">
+            <p class="q-text"><span class="q-num">1</span>Jelaskan makna Sila Pertama Pancasila dan berikan 3 contoh konkret penerapannya dalam kehidupan sehari-hari di lingkungan madrasah!</p>
+            <textarea class="essay-textarea" placeholder="Tuliskan jawabanmu di sini..."></textarea>
+            <div class="answer-key">
+                <strong>✅ Kunci Jawaban:</strong><br>
+                <small>
+                    <strong>Makna Sila Pertama:</strong> Sila "Ketuhanan Yang Maha Esa" mengandung makna bahwa bangsa Indonesia adalah bangsa yang religius, beriman kepada Tuhan Yang Maha Esa, dan menghormati kebebasan setiap warga negara untuk memeluk agama dan beribadah sesuai keyakinannya. Sila ini menjamin toleransi dan kerukunan antarumat beragama.<br><br>
+                    <strong>3 Contoh Penerapan di Madrasah:</strong><br>
+                    a. Melaksanakan salat berjamaah di masjid madrasah sebelum atau setelah pelajaran.<br>
+                    b. Memulai dan mengakhiri pelajaran dengan berdoa bersama.<br>
+                    c. Menghormati teman yang berbeda agama (jika ada) dengan tidak mengganggu saat mereka beribadah dan tetap berteman dengan baik.
+                </small>
+            </div>
+        </div>
+
+        <div class="question" data-type="essay">
+            <p class="q-text"><span class="q-num">2</span>Apa yang dimaksud dengan "Bhinneka Tunggal Ika"? Jelaskan asal-usul semboyan tersebut dan mengapa semboyan ini penting bagi bangsa Indonesia!</p>
+            <textarea class="essay-textarea" placeholder="Tuliskan jawabanmu di sini..."></textarea>
+            <div class="answer-key">
+                <strong>✅ Kunci Jawaban:</strong><br>
+                <small>
+                    <strong>Pengertian:</strong> "Bhinneka Tunggal Ika" berarti "Berbeda-beda tetapi tetap satu jua". Semboyan ini menggambarkan kenyataan bahwa meskipun bangsa Indonesia terdiri dari berbagai suku, agama, ras, dan budaya, kita tetap satu bangsa, satu tanah air, dan satu bahasa persatuan, yaitu Indonesia.<br><br>
+                    <strong>Asal-usul:</strong> Semboyan ini berasal dari kitab <em>Sutasoma</em> karya <strong>Mpu Tantular</strong> pada masa Kerajaan Majapahit (abad ke-14). Kitab ini ditulis dalam bahasa Jawa Kuno.<br><br>
+                    <strong>Pentingnya bagi bangsa Indonesia:</strong><br>
+                    a. Sebagai pemersatu bangsa di tengah keberagaman yang luar biasa (lebih dari 1.300 suku, 700 bahasa daerah, berbagai agama).<br>
+                    b. Mencegah perpecahan dan konflik antar kelompok.<br>
+                    c. Menjadi pedoman hidup bermasyarakat yang harmonis.<br>
+                    d. Memperkuat identitas nasional sebagai bangsa Indonesia.
+                </small>
+            </div>
+        </div>
+
+        <div class="question" data-type="essay">
+            <p class="q-text"><span class="q-num">3</span>Analisislah perbedaan antara musyawarah dan voting dalam pengambilan keputusan! Mengapa musyawarah untuk mufakat lebih diutamakan dalam Pancasila?</p>
+            <textarea class="essay-textarea" placeholder="Tuliskan jawabanmu di sini..."></textarea>
+            <div class="answer-key">
+                <strong>✅ Kunci Jawaban:</strong><br>
+                <small>
+                    <strong>Perbedaan Musyawarah dan Voting:</strong><br>
+                    a. <strong>Musyawarah</strong> — Proses pembahasan masalah secara bersama-sama untuk mencapai kesepakatan (mufakat) melalui dialog, dengan mempertimbangkan semua pendapat.<br>
+                    b. <strong>Voting</strong> — Pengambilan keputusan melalui pemungutan suara, di mana keputusan ditentukan oleh suara terbanyak (mayoritas).<br><br>
+                    <strong>Mengapa musyawarah lebih diutamakan:</strong><br>
+                    a. <strong>Menghargai semua pendapat</strong> — Setiap anggota memiliki kesempatan yang sama untuk menyampaikan pendapat.<br>
+                    b. <strong>Mencapai mufakat</strong> — Keputusan diambil berdasarkan kesepakatan bersama, bukan kemenangan mayoritas atas minoritas.<br>
+                    c. <strong>Memperkuat persatuan</strong> — Keputusan yang diambil melalui musyawarah lebih diterima oleh semua pihak, sehingga tidak menimbulkan perpecahan.<br>
+                    d. <strong>Sesuai dengan nilai Pancasila</strong> — Musyawarah untuk mufakat merupakan ciri khas demokrasi Pancasila yang menekankan hikmat kebijaksanaan, bukan sekadar kemenangan suara terbanyak.<br>
+                    e. <strong>Voting sebagai jalan terakhir</strong> — Voting hanya dilakukan jika musyawarah tidak mencapai mufakat.
+                </small>
+            </div>
+        </div>
+
+        <div class="question" data-type="essay">
+            <p class="q-text"><span class="q-num">4</span>Sebagai pelajar MTsN di era digital, identifikasi 3 tantangan penerapan Pancasila di dunia maya dan berikan solusi konkret untuk mengatasinya!</p>
+            <textarea class="essay-textarea" placeholder="Tuliskan jawabanmu di sini..."></textarea>
+            <div class="answer-key">
+                <strong>✅ Kunci Jawaban:</strong><br>
+                <small>
+                    <strong>3 Tantangan dan Solusi:</strong><br>
+                    a. <strong>Tantangan 1: Penyebaran Hoaks</strong><br>
+                    <em>Solusi:</em> Meningkatkan literasi digital dengan selalu memverifikasi informasi sebelum membagikannya (cek fakta, sumber, dan tanggal berita). Tidak mudah terprovokasi oleh berita yang belum jelas kebenarannya.<br><br>
+                    b. <strong>Tantangan 2: Cyber Bullying</strong><br>
+                    <em>Solusi:</em> Menerapkan etika bermedia sosial dengan tidak menulis komentar yang menyinggung atau merundung orang lain. Melaporkan kasus bullying kepada guru atau orang tua. Menjadi "upstander" (pembela) bukan "bystander" (penonton).<br><br>
+                    c. <strong>Tantangan 3: Individualisme akibat Gadget</strong><br>
+                    <em>Solusi:</em> Membatasi penggunaan gadget dan memperbanyak interaksi sosial secara langsung. Mengikuti kegiatan positif di masyarakat seperti gotong royong, pengajian, atau kegiatan remaja masjid. Menjaga keseimbangan antara dunia maya dan dunia nyata.
+                </small>
+            </div>
+        </div>
+
+        <div class="question" data-type="essay">
+            <p class="q-text"><span class="q-num">5</span>Buatlah sebuah rencana aksi pribadi untuk menerapkan kelima sila Pancasila dalam kehidupan sehari-hari sebagai pelajar MTsN 6 Agam! Sajikan dalam bentuk tabel!</p>
+            <textarea class="essay-textarea" placeholder="Tuliskan jawabanmu di sini..."></textarea>
+            <div class="answer-key">
+                <strong>✅ Kunci Jawaban (contoh rencana aksi):</strong><br>
+                <small>
+                    <table style="margin-top: 0.5rem;">
+                        <thead>
+                            <tr>
+                                <th>Sila</th>
+                                <th>Rencana Aksi Pribadi</th>
+                                <th>Lingkungan</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td>Sila 1</td>
+                                <td>• Salat 5 waktu tepat waktu<br>• Mengaji setiap hari<br>• Menghormati teman yang berbeda agama</td>
+                                <td>Keluarga, Madrasah</td>
+                            </tr>
+                            <tr>
+                                <td>Sila 2</td>
+                                <td>• Tidak melakukan bullying<br>• Membantu teman yang kesulitan<br>• Menyayangi adik dan menghormati kakak</td>
+                                <td>Madrasah, Keluarga</td>
+                            </tr>
+                            <tr>
+                                <td>Sila 3</td>
+                                <td>• Mengikuti upacara bendera dengan khidmat<br>• Berteman dengan semua siswa<br>• Mempelajari budaya daerah</td>
+                                <td>Madrasah, Masyarakat</td>
+                            </tr>
+                            <tr>
+                                <td>Sila 4</td>
+                                <td>• Berdiskusi dengan sopan di kelas<br>• Menerima hasil keputusan musyawarah<br>• Menghargai pendapat teman</td>
+                                <td>Madrasah, Keluarga</td>
+                            </tr>
+                            <tr>
+                                <td>Sila 5</td>
+                                <td>• Melaksanakan piket kelas dengan adil<br>• Menghargai prestasi teman<br>• Hidup hemat dan tidak boros</td>
+                                <td>Madrasah, Keluarga, Masyarakat</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </small>
+            </div>
+        </div>
+
+        <!-- Buttons & Score -->
+        <div style="margin-top: 2rem;">
+            <button class="btn" onclick="checkAllAnswers()">✅ Periksa Semua Jawaban</button>
+            <button class="btn btn-secondary" onclick="showAllAnswers()">🔍 Tampilkan Semua Kunci Jawaban</button>
+            <button class="btn btn-reset" onclick="resetQuiz()">🔄 Reset</button>
+        </div>
+
+        <div class="score-display" id="score-display">
+            <h3>📊 Hasil Uji Formatif</h3>
+            <div class="score-num" id="score-number">0</div>
+            <p id="score-message">Nilai kamu</p>
+            <p style="margin-top: 0.5rem; font-size: 0.95rem;" id="score-detail"></p>
+        </div>
+    </div>
+
+    <!-- Chapter Navigation -->
+    <div class="chapter-nav">
+        <a href="1.html" class="nav-btn prev">
+            <div class="label">← Kembali ke</div>
+            <div class="title">Bab 1: Sejarah Kelahiran Pancasila</div>
+        </a>
+        <a href="3.html" class="nav-btn next">
+            <div class="label">Lanjut ke →</div>
+            <div class="title">Bab 3: Patuh terhadap Norma</div>
+        </a>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+        <p><strong>📘 Pkn Kelas 7 Semester Ganjil — Bab 2: Penerapan Nilai-Nilai Pancasila</strong></p>
+        <p>Penulis: Eva Susiarti, S.Pd | MTsN 6 Agam</p>
+        <p>Email: eva.susiarti1234@gmail.com</p>
+        <p style="margin-top: 1rem;">&copy; 2026 Eva Susiarti, S.Pd — MTsN 6 Agam. Hak Cipta Dilindungi.</p>
+    </footer>
+
+    <script>
+        // Check all answers
+        function checkAllAnswers() {
+            let totalScore = 0;
+            let maxScore = 0;
+            let mcCorrect = 0, mcTotal = 0;
+            let tfCorrect = 0, tfTotal = 0;
+            let matchCorrect = 0, matchTotal = 0;
+            let fillCorrect = 0, fillTotal = 0;
+
+            // Check Multiple Choice
+            document.querySelectorAll('.question[data-type="mc"]').forEach(q => {
+                mcTotal++;
+                maxScore += 2;
+                const correctAnswer = q.getAttribute('data-answer');
+                const options = q.querySelectorAll('.options li');
+                const answerKey = q.querySelector('.answer-key');
+                let answered = false;
+
+                options.forEach(opt => {
+                    opt.classList.remove('correct', 'incorrect');
+                    const value = opt.getAttribute('data-value');
+                    
+                    if (opt.classList.contains('selected')) {
+                        answered = true;
+                        if (value === correctAnswer) {
+                            opt.classList.add('correct');
+                            mcCorrect++;
+                            totalScore += 2;
+                        } else {
+                            opt.classList.add('incorrect');
+                            options.forEach(o => {
+                                if (o.getAttribute('data-value') === correctAnswer) {
+                                    o.classList.add('correct');
+                                }
+                            });
+                        }
+                    }
+                });
+
+                if (answered) {
+                    answerKey.classList.add('show');
+                }
+            });
+
+            // Check True/False
+            document.querySelectorAll('.question[data-type="tf"]').forEach(q => {
+                tfTotal++;
+                maxScore += 2;
+                const correctAnswer = q.getAttribute('data-answer');
+                const options = q.querySelectorAll('.options li');
+                const answerKey = q.querySelector('.answer-key');
+                let answered = false;
+
+                options.forEach(opt => {
+                    opt.classList.remove('correct', 'incorrect');
+                    const value = opt.getAttribute('data-value');
+                    
+                    if (opt.classList.contains('selected')) {
+                        answered = true;
+                        if (value === correctAnswer) {
+                            opt.classList.add('correct');
+                            tfCorrect++;
+                            totalScore += 2;
+                        } else {
+                            opt.classList.add('incorrect');
+                            options.forEach(o => {
+                                if (o.getAttribute('data-value') === correctAnswer) {
+                                    o.classList.add('correct');
+                                }
+                            });
+                        }
+                    }
+                });
+
+                if (answered) {
+                    answerKey.classList.add('show');
+                }
+            });
+
+            // Check Matching
+            document.querySelectorAll('.question[data-type="match"]').forEach(q => {
+                const selects = q.querySelectorAll('.match-select');
+                const answerKey = q.querySelector('.answer-key');
+                let allCorrect = true;
+                let allFilled = true;
+
+                selects.forEach(sel => {
+                    matchTotal++;
+                    maxScore += 2;
+                    const correct = sel.getAttribute('data-correct');
+                    if (sel.value === '') {
+                        allFilled = false;
+                    } else if (sel.value === correct) {
+                        sel.style.background = '#c8e6c9';
+                        sel.style.borderColor = '#2e7d32';
+                        matchCorrect++;
+                        totalScore += 2;
+                    } else {
+                        sel.style.background = '#ffcdd2';
+                        sel.style.borderColor = '#c62828';
+                        allCorrect = false;
+                    }
+                });
+
+                if (allFilled) {
+                    answerKey.classList.add('show');
+                }
+            });
+
+            // Check Fill in the Blank
+            document.querySelectorAll('.question[data-type="fill"]').forEach(q => {
+                fillTotal++;
+                maxScore += 2;
+                const correctAnswers = q.getAttribute('data-answer').split(',').map(a => a.trim().toLowerCase());
+                const input = q.querySelector('.fill-input');
+                const answerKey = q.querySelector('.answer-key');
+                const userAnswer = input.value.trim().toLowerCase();
+
+                if (userAnswer !== '') {
+                    let isCorrect = false;
+                    for (let ans of correctAnswers) {
+                        if (userAnswer.includes(ans) || ans.includes(userAnswer)) {
+                            isCorrect = true;
+                            break;
+                        }
+                    }
+
+                    if (isCorrect) {
+                        input.style.background = '#c8e6c9';
+                        input.style.borderColor = '#2e7d32';
+                        fillCorrect++;
+                        totalScore += 2;
+                    } else {
+                        input.style.background = '#ffcdd2';
+                        input.style.borderColor = '#c62828';
+                    }
+                    answerKey.classList.add('show');
+                }
+            });
+
+            // Show score
+            const percentage = Math.round((totalScore / maxScore) * 100);
+            document.getElementById('score-number').textContent = percentage + '%';
+            
+            let message = '';
+            let messageColor = '';
+            if (percentage >= 85) {
+                message = '🌟 Luar Biasa! Kamu sangat memahami penerapan Pancasila!';
+                messageColor = '#2e7d32';
+            } else if (percentage >= 70) {
+                message = '👍 Bagus! Terus tingkatkan pemahamanmu tentang Pancasila!';
+                messageColor = '#1976d2';
+            } else if (percentage >= 55) {
+                message = '📚 Cukup baik. Pelajari kembali bagian yang belum dikuasai.';
+                messageColor = '#ff6f00';
+            } else {
+                message = '💪 Jangan menyerah! Baca kembali materi dan coba lagi.';
+                messageColor = '#c62828';
+            }
+
+            document.getElementById('score-message').innerHTML = `<span style="color:${messageColor}; font-weight:600;">${message}</span>`;
+            document.getElementById('score-detail').innerHTML = `
+                <strong>Detail Nilai:</strong><br>
+                • Pilihan Ganda: ${mcCorrect}/${mcTotal} benar<br>
+                • Benar/Salah: ${tfCorrect}/${tfTotal} benar<br>
+                • Menjodohkan: ${matchCorrect}/${matchTotal} benar<br>
+                • Isian Singkat: ${fillCorrect}/${fillTotal} benar<br>
+                • Uraian: Periksa kunci jawaban untuk evaluasi mandiri<br>
+                <strong>Total: ${totalScore}/${maxScore} poin (${percentage}%)</strong>
+            `;
+            
+            document.getElementById('score-display').classList.add('show');
+            document.getElementById('quiz-section').scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+
+        // Show all answer keys
+        function showAllAnswers() {
+            document.querySelectorAll('.answer-key').forEach(key => {
+                key.classList.add('show');
+            });
+        }
+
+        // Reset quiz
+        function resetQuiz() {
+            if (!confirm('Apakah kamu yakin ingin mereset semua jawaban?')) return;
+
+            // Reset MC & TF
+            document.querySelectorAll('.options li').forEach(opt => {
+                opt.classList.remove('correct', 'incorrect', 'selected');
+            });
+
+            // Reset matching
+            document.querySelectorAll('.match-select').forEach(sel => {
+                sel.value = '';
+                sel.style.background = '#fff';
+                sel.style.borderColor = '#e0e0e0';
+            });
+
+            // Reset fill inputs
+            document.querySelectorAll('.fill-input').forEach(input => {
+                input.value = '';
+                input.style.background = '#fff';
+                input.style.borderColor = '#e0e0e0';
+            });
+
+            // Reset essay
+            document.querySelectorAll('.essay-textarea').forEach(ta => {
+                ta.value = '';
+            });
+
+            // Hide answer keys
+            document.querySelectorAll('.answer-key').forEach(key => {
+                key.classList.remove('show');
+            });
+
+            // Hide score
+            document.getElementById('score-display').classList.remove('show');
+        }
+
+        // Option click handler for MC and TF
+        document.querySelectorAll('.question[data-type="mc"] .options li, .question[data-type="tf"] .options li').forEach(opt => {
+            opt.addEventListener('click', function() {
+                const parent = this.closest('.question');
+                parent.querySelectorAll('.options li').forEach(o => {
+                    o.classList.remove('selected');
+                });
+                this.classList.add('selected');
+            });
+        });
+    </script>
+
+</body>
+</html>

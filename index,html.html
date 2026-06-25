@@ -1,0 +1,660 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pkn Kelas 7 Semester Ganjil | Eva Susiarti, S.Pd</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: #f4f7fa;
+        }
+
+        /* Navigation */
+        nav {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            padding: 1rem 2rem;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.3);
+        }
+
+        nav ul {
+            list-style: none;
+            display: flex;
+            justify-content: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+        }
+
+        nav ul li a {
+            color: #fff;
+            text-decoration: none;
+            font-weight: 500;
+            transition: color 0.3s;
+        }
+
+        nav ul li a:hover {
+            color: #ffd54f;
+        }
+
+        /* Hero Section */
+        .hero {
+            background: linear-gradient(135deg, #1a237e 0%, #0d47a1 50%, #01579b 100%);
+            color: white;
+            padding: 5rem 2rem;
+            text-align: center;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .hero::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: url('data:image/svg+xml,<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100"><circle cx="50" cy="50" r="40" fill="none" stroke="rgba(255,255,255,0.05)" stroke-width="2"/></svg>') repeat;
+            opacity: 0.3;
+        }
+
+        .hero h1 {
+            font-size: 2.8rem;
+            margin-bottom: 1rem;
+            position: relative;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
+        }
+
+        .hero .subtitle {
+            font-size: 1.3rem;
+            opacity: 0.9;
+            margin-bottom: 0.5rem;
+            position: relative;
+        }
+
+        .hero .edition {
+            display: inline-block;
+            background: rgba(255,213,79,0.9);
+            color: #1a237e;
+            padding: 0.3rem 1.2rem;
+            border-radius: 20px;
+            font-weight: 700;
+            margin-top: 1rem;
+            position: relative;
+        }
+
+        .hero .author {
+            font-size: 1.1rem;
+            margin-top: 1.5rem;
+            position: relative;
+            opacity: 0.95;
+        }
+
+        /* Section Styles */
+        section {
+            padding: 4rem 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        section h2 {
+            text-align: center;
+            font-size: 2.2rem;
+            color: #1a237e;
+            margin-bottom: 2rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        section h2::after {
+            content: '';
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 80px;
+            height: 4px;
+            background: linear-gradient(to right, #ffd54f, #ff6f00);
+            border-radius: 2px;
+        }
+
+        /* About Section */
+        #tentang {
+            background: #fff;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        #tentang p {
+            text-align: center;
+            font-size: 1.1rem;
+            max-width: 800px;
+            margin: 0 auto 2rem;
+            color: #555;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .feature-card {
+            background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+
+        .feature-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 25px rgba(26,35,126,0.15);
+        }
+
+        .feature-card .icon {
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .feature-card h3 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .feature-card p {
+            color: #555;
+            font-size: 0.95rem;
+        }
+
+        /* Structure Section */
+        .structure-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .structure-item {
+            background: #fff;
+            padding: 1.5rem;
+            border-radius: 10px;
+            border-left: 4px solid #1a237e;
+            box-shadow: 0 3px 10px rgba(0,0,0,0.06);
+        }
+
+        .structure-item h4 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        /* Chapters Section */
+        #bab {
+            background: #fff;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .chapter-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 1rem;
+            margin-top: 2rem;
+        }
+
+        .chapter-link {
+            display: flex;
+            align-items: center;
+            padding: 1rem 1.5rem;
+            background: linear-gradient(135deg, #f5f5f5, #e8eaf6);
+            border-radius: 10px;
+            text-decoration: none;
+            color: #333;
+            transition: all 0.3s;
+            border-left: 4px solid transparent;
+        }
+
+        .chapter-link:hover {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: #fff;
+            border-left-color: #ffd54f;
+            transform: translateX(5px);
+            box-shadow: 0 5px 15px rgba(26,35,126,0.3);
+        }
+
+        .chapter-link .chapter-num {
+            background: #1a237e;
+            color: #fff;
+            width: 40px;
+            height: 40px;
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: 700;
+            margin-right: 1rem;
+            flex-shrink: 0;
+            transition: background 0.3s;
+        }
+
+        .chapter-link:hover .chapter-num {
+            background: #ffd54f;
+            color: #1a237e;
+        }
+
+        .chapter-link.uts {
+            background: linear-gradient(135deg, #fff3e0, #ffe0b2);
+            border-left-color: #ff6f00;
+        }
+
+        .chapter-link.uts:hover {
+            background: linear-gradient(135deg, #ff6f00, #e65100);
+            border-left-color: #ffd54f;
+        }
+
+        .chapter-link.uts .chapter-num {
+            background: #ff6f00;
+        }
+
+        .chapter-link.uas {
+            background: linear-gradient(135deg, #e8f5e9, #c8e6c9);
+            border-left-color: #2e7d32;
+        }
+
+        .chapter-link.uas:hover {
+            background: linear-gradient(135deg, #2e7d32, #1b5e20);
+            border-left-color: #ffd54f;
+        }
+
+        .chapter-link.uas .chapter-num {
+            background: #2e7d32;
+        }
+
+        .chapter-title {
+            font-weight: 500;
+            font-size: 0.95rem;
+        }
+
+        /* Author Section */
+        #penulis {
+            background: #fff;
+            border-radius: 15px;
+            margin-top: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .author-card {
+            display: flex;
+            align-items: center;
+            gap: 2rem;
+            flex-wrap: wrap;
+            justify-content: center;
+            margin-top: 2rem;
+        }
+
+        .author-avatar {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 3.5rem;
+            color: #ffd54f;
+            box-shadow: 0 5px 20px rgba(26,35,126,0.3);
+        }
+
+        .author-info {
+            flex: 1;
+            min-width: 280px;
+        }
+
+        .author-info h3 {
+            font-size: 1.8rem;
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .author-info .role {
+            color: #666;
+            margin-bottom: 1rem;
+            font-size: 1.05rem;
+        }
+
+        .author-info .bio {
+            color: #555;
+            line-height: 1.8;
+        }
+
+        .quote {
+            background: linear-gradient(135deg, #e8eaf6, #c5cae9);
+            padding: 1.5rem 2rem;
+            border-radius: 10px;
+            margin-top: 2rem;
+            font-style: italic;
+            text-align: center;
+            color: #1a237e;
+            font-size: 1.1rem;
+            border-left: 4px solid #ffd54f;
+        }
+
+        /* Contact Section */
+        #kontak {
+            background: #fff;
+            border-radius: 15px;
+            margin-top: 2rem;
+            margin-bottom: 2rem;
+            box-shadow: 0 5px 20px rgba(0,0,0,0.08);
+        }
+
+        .contact-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 1.5rem;
+            margin-top: 2rem;
+        }
+
+        .contact-item {
+            text-align: center;
+            padding: 2rem;
+            background: #f5f5f5;
+            border-radius: 10px;
+        }
+
+        .contact-item .icon {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+        }
+
+        .contact-item h4 {
+            color: #1a237e;
+            margin-bottom: 0.5rem;
+        }
+
+        .contact-item p {
+            color: #555;
+        }
+
+        .contact-item a {
+            color: #0d47a1;
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            text-decoration: underline;
+        }
+
+        /* Footer */
+        footer {
+            background: linear-gradient(135deg, #1a237e, #0d47a1);
+            color: white;
+            text-align: center;
+            padding: 2rem;
+            margin-top: 2rem;
+        }
+
+        footer p {
+            opacity: 0.9;
+        }
+
+        /* Responsive */
+        @media (max-width: 768px) {
+            .hero h1 {
+                font-size: 2rem;
+            }
+
+            nav ul {
+                gap: 1rem;
+            }
+
+            section {
+                padding: 3rem 1rem;
+            }
+
+            .chapter-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Navigation -->
+    <nav>
+        <ul>
+            <li><a href="#beranda">Beranda</a></li>
+            <li><a href="#tentang">Tentang Buku</a></li>
+            <li><a href="#bab">Daftar Bab</a></li>
+            <li><a href="#penulis">Penulis</a></li>
+            <li><a href="#kontak">Kontak</a></li>
+        </ul>
+    </nav>
+
+    <!-- Hero Section -->
+    <header class="hero" id="beranda">
+        <h1>📘 Pkn Kelas 7 Semester Ganjil</h1>
+        <p class="subtitle">Pendidikan Kewarganegaraan untuk Madrasah Tsanawiyah</p>
+        <p class="subtitle">Teori, Nilai, dan Aplikasi Pancasila dalam Kehidupan Sehari-hari</p>
+        <span class="edition">📖 20 Bab Lengkap</span>
+        <p class="author">✍️ Eva Susiarti, S.Pd<br>MTsN 6 Agam</p>
+    </header>
+
+    <!-- Tentang Buku -->
+    <section id="tentang">
+        <h2>Tentang Buku</h2>
+        <p>
+            Buku ini disusun sebagai bahan ajar Pendidikan Kewarganegaraan (Pkn) untuk peserta didik kelas 7 Madrasah Tsanawiyah pada semester ganjil. 
+            Buku ini membahas secara komprehensif mulai dari sejarah perumusan Pancasila, norma dan aturan dalam kehidupan bermasyarakat, 
+            hingga hak dan kewajiban warga negara — dikemas dengan bahasa yang mudah dipahami serta dilengkapi contoh-contoh nyata.
+        </p>
+
+        <div class="features">
+            <div class="feature-card">
+                <div class="icon">📚</div>
+                <h3>20 Bab Lengkap</h3>
+                <p>Materi terstruktur dari dasar hingga evaluasi komprehensif</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">🎯</div>
+                <h3>Kurikulum Terkini</h3>
+                <p>Sesuai dengan Kurikulum Merdeka dan kebutuhan madrasah</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">💡</div>
+                <h3>Kontekstual</h3>
+                <p>Dilengkapi studi kasus dan contoh nyata kehidupan sehari-hari</p>
+            </div>
+            <div class="feature-card">
+                <div class="icon">✅</div>
+                <h3>UTS & UAS</h3>
+                <p>Termasuk evaluasi tengah dan akhir semester</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Struktur Pembahasan -->
+    <section>
+        <h2>Struktur Pembahasan</h2>
+        <p style="text-align:center; color:#555; margin-bottom:1rem;">Buku ini disusun secara sistematis dengan pembagian sebagai berikut:</p>
+        <div class="structure-grid">
+            <div class="structure-item">
+                <h4>📖 Bab 1 – 5</h4>
+                <p>Pancasila sebagai Dasar Negara dan Nilai-Nilai Juang</p>
+            </div>
+            <div class="structure-item">
+                <h4>📖 Bab 6 – 10</h4>
+                <p>Norma, Hukum, dan Peraturan Perundang-undangan</p>
+            </div>
+            <div class="structure-item">
+                <h4>📝 Bab 11</h4>
+                <p>Ujian Tengah Semester (UTS) — Review Materi Bab 1-10</p>
+            </div>
+            <div class="structure-item">
+                <h4>📖 Bab 12 – 19</h4>
+                <p>Keberagaman, Persatuan, Hak & Kewajiban Warga Negara</p>
+            </div>
+            <div class="structure-item">
+                <h4>📝 Bab 20</h4>
+                <p>Ujian Akhir Semester (UAS) — Review Komprehensif</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Daftar Bab -->
+    <section id="bab">
+        <h2>Daftar Bab</h2>
+        <p style="text-align:center; color:#555; margin-bottom:1rem;">Klik pada setiap bab untuk membuka materi lengkap (file .html terpisah). Semua bab akan terbuka di tab baru.</p>
+
+        <div class="chapter-grid">
+            <a href="1.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">1</span>
+                <span class="chapter-title">Perumusan Pancasila sebagai Dasar Negara</span>
+            </a>
+            <a href="2.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">2</span>
+                <span class="chapter-title">Nilai-Nilai Juang dalam Proses Perumusan Pancasila</span>
+            </a>
+            <a href="3.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">3</span>
+                <span class="chapter-title">Penerapan Sila-Sila Pancasila dalam Kehidupan Sehari-hari</span>
+            </a>
+            <a href="4.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">4</span>
+                <span class="chapter-title">Makna dan Nilai Sejarah Sumpah Pemuda</span>
+            </a>
+            <a href="5.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">5</span>
+                <span class="chapter-title">Makna Proklamasi Kemerdekaan Republik Indonesia</span>
+            </a>
+            <a href="6.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">6</span>
+                <span class="chapter-title">Komitmen terhadap Kesepakatan Bersama demi Tujuan Nasional</span>
+            </a>
+            <a href="7.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">7</span>
+                <span class="chapter-title">Kedudukan dan Fungsi Peraturan Perundang-Undangan</span>
+            </a>
+            <a href="8.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">8</span>
+                <span class="chapter-title">Norma dan Aturan dalam Kehidupan Bermasyarakat</span>
+            </a>
+            <a href="9.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">9</span>
+                <span class="chapter-title">Ketaatan terhadap Hukum dan Peraturan yang Berlaku</span>
+            </a>
+            <a href="10.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">10</span>
+                <span class="chapter-title">Makna Kemerdekaan Beragama dan Berkeyakinan</span>
+            </a>
+            <a href="11.html" target="_blank" class="chapter-link uts">
+                <span class="chapter-num">UTS</span>
+                <span class="chapter-title">Ujian Tengah Semester — Review Materi Bab 1-10</span>
+            </a>
+            <a href="12.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">12</span>
+                <span class="chapter-title">Keberagaman Suku, Agama, Ras, dan Antargolongan di Indonesia</span>
+            </a>
+            <a href="13.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">13</span>
+                <span class="chapter-title">Harmoni dalam Keberagaman Masyarakat Indonesia</span>
+            </a>
+            <a href="14.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">14</span>
+                <span class="chapter-title">Persatuan dan Kesatuan Bangsa Indonesia</span>
+            </a>
+            <a href="15.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">15</span>
+                <span class="chapter-title">Peran dan Fungsi Lembaga-Lembaga Negara</span>
+            </a>
+            <a href="16.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">16</span>
+                <span class="chapter-title">Hak dan Kewajiban Warga Negara</span>
+            </a>
+            <a href="17.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">17</span>
+                <span class="chapter-title">Keadilan Sosial bagi Seluruh Rakyat Indonesia</span>
+            </a>
+            <a href="18.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">18</span>
+                <span class="chapter-title">Perilaku Toleran dalam Kehidupan Beragama dan Bermasyarakat</span>
+            </a>
+            <a href="19.html" target="_blank" class="chapter-link">
+                <span class="chapter-num">19</span>
+                <span class="chapter-title">Gotong Royong dan Semangat Bela Negara</span>
+            </a>
+            <a href="20.html" target="_blank" class="chapter-link uas">
+                <span class="chapter-num">UAS</span>
+                <span class="chapter-title">Ujian Akhir Semester — Review Komprehensif</span>
+            </a>
+        </div>
+    </section>
+
+    <!-- Tentang Penulis -->
+    <section id="penulis">
+        <h2>Tentang Penulis</h2>
+        <div class="author-card">
+            <div class="author-avatar">👩‍🏫</div>
+            <div class="author-info">
+                <h3>Eva Susiarti, S.Pd</h3>
+                <p class="role">Guru Pendidikan Kewarganegaraan — MTsN 6 Agam</p>
+                <p class="bio">
+                    Penulis adalah seorang pendidik yang berdedikasi di bidang Pendidikan Kewarganegaraan pada jenjang Madrasah Tsanawiyah. 
+                    Dengan pengalaman mengajar di MTsN 6 Agam, Kabupaten Agam, Sumatera Barat, penulis berkomitmen untuk menyajikan 
+                    materi Pkn yang tidak hanya informatif tetapi juga inspiratif bagi generasi muda. 
+                    Buku ini disusun berdasarkan pengalaman mengajar di kelas serta upaya untuk menanamkan nilai-nilai Pancasila 
+                    dan kewarganegaraan secara kontekstual dan menyenangkan.
+                </p>
+            </div>
+        </div>
+
+        <div class="quote">
+            "Pendidikan Kewarganegaraan bukan sekadar hafalan, melainkan pembentukan karakter warga negara yang cerdas, berkarakter, dan cinta tanah air."
+        </div>
+    </section>
+
+    <!-- Kontak -->
+    <section id="kontak">
+        <h2>Informasi Kontak</h2>
+        <p style="text-align:center; color:#555;">Untuk informasi lebih lanjut tentang buku ini, silakan hubungi:</p>
+
+        <div class="contact-grid">
+            <div class="contact-item">
+                <div class="icon">📧</div>
+                <h4>Email</h4>
+                <p><a href="mailto:eva.susiarti1234@gmail.com">eva.susiarti1234@gmail.com</a></p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">🏫</div>
+                <h4>Institusi</h4>
+                <p>MTsN 6 Agam</p>
+            </div>
+            <div class="contact-item">
+                <div class="icon">📅</div>
+                <h4>Tahun Terbit</h4>
+                <p>2026</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2026 Eva Susiarti, S.Pd — MTsN 6 Agam</p>
+        <p>Pkn Kelas 7 Semester Ganjil: Membangun Generasi Pancasila yang Berkarakter</p>
+    </footer>
+
+</body>
+</html>
